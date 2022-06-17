@@ -1,0 +1,15 @@
+# Exploring GSOC
+
+Since, I want to be part of  GSOC, I started exloring more and more organizations and tried to contribute consistently. I had an eye on LLVM,CERN-HSF, Fossology, GFOSS, SPDX, About Code and many others. But, One thing that catched my eye was CERNs workflow. There was an Internal round which you need to get cleared with the mentor in order to discuss the project further in detail. All I did was I went through the requirements and tried learning more about the projects. I like 3 Projects in CERN which were :
+- Geant4 - Data Visualization
+- ROOT - Cling Interpreter Support for adding libraries 
+- CERN-Box - Migrate Smashbox to Python3
+
+I frequently visited the site and read the requirements of the Projects. Meanwhile, I was wondering what is Data Visualization and I saw a video on the TEDx regarding the same. It was very good explaination and presentation about Data Visualization and the best thing which I learned from it was **" It allows you to raise questions that you might not raise with just the raw data without the visuals ."**
+This got my interest more and more with the Geant4 project and other part was **perf** profiling tool for Linux. So, I was little aware about Valgrind which is also similar kind of tool. So, What I did was simply, Learned more about this two technology and wrote two articles on Medium. You can read them to kmow in detail about how I used them to gain more insights and knowledge about the techs involved into the Project. [Data Visualization using D3.JS](https://medium.com/@harshiljani2002/visualizing-data-on-web-390d42e52a51) and [Perf](https://medium.com/@harshiljani2002/linux-perf-profiling-227d17101bd6)
+
+Parallaly, I was also in attraction of a Simulation Software named as Apothesis which simulated Kinetic Monte Carlo processes. The project was about creating the Parser and generalizing the Input and Output for the simulation software. This was under Greek FOSSology Organization. I was in deep conversation discussing both the projects parallely. In CERN's first round, I was given a task to create a scatter plot based on raw sample file along with some bonus changes. I made the chart and submitted the project in 1 day. And I got a green signal by my mentor **Guillherme Amadio** to start working on proposal and discuss the part later on the proposal itself. I had plenty of questions and he helped with all of them. Finally, I had a proposal ready for submission. Meanwhile, In GFOSS also, I had more clear proposal refinements. You can always mail me [@harshiljani2002](harshiljani2002@gmail.com) in case you need any of my proposals.
+
+I had my End-Semester exams going on in the time when the proposals were being reviewed so, I couldn't really get time for more contributions. So, Fast forward, The results were announced and boom 
+
+🎉 My proposal was accepted at @CERN-HSF for Geant4 - Performance Analysis and Data Visualization.

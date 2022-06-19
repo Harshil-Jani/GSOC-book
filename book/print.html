@@ -82,7 +82,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><a href="introduction.html">Introduction</a></li><li class="chapter-item expanded affix "><a href="exploring_OpenSource.html">Exploring Open Source</a></li><li class="chapter-item expanded affix "><a href="exploring_GSOC.html">Exploring GSOC</a></li><li class="chapter-item expanded "><a href="chapter1.html"><strong aria-hidden="true">1.</strong> Community Bonding Period</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="introduction.html">Introduction</a></li><li class="chapter-item expanded affix "><a href="exploring_OpenSource.html">Exploring Open Source</a></li><li class="chapter-item expanded affix "><a href="exploring_GSOC.html">Exploring GSOC</a></li><li class="chapter-item expanded "><a href="chapter1.html"><strong aria-hidden="true">1.</strong> Community Bonding Period</a></li><li class="chapter-item expanded "><a href="chapter2.html"><strong aria-hidden="true">2.</strong> Week 1</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -179,13 +179,33 @@ This got my interest more and more with the Geant4 project and other part was <s
 <div style="break-before: page; page-break-before: always;"></div><h1 id="community-bonding-period"><a class="header" href="#community-bonding-period">Community Bonding Period</a></h1>
 <p>Before we actually get started with the project, There is a phase of time known as Community Bonding Period.
 Each Organization have their own set of rules, workflows and hierarcy to follow. To get new contributors familiar with the organization this period is crucial. In this time, Students get familiar with the work to be done in their community, know their mentors, plan their project in more details, receive guidelines for contribution, gets resoruces to gain knowledge on any topic etc.</p>
-<p>Talking about my personal experience, On 20th May I got to know about the selection, Then I got a mail from mentor about an introductory call which we scehduled. In that, All of us Me and both of my mentors <strong>Guillherme Amadio</strong> and <strong>Bernherd Manfred Grubber</strong> had a brief introduction. Further, We had more project oriented discussion about what part am I supposed to look on more often. Then I got some links to Guest Accounts in CERN which was to be used for further communication and activities. After, The first call, I was playing around the repository and had few errors and questions. So, We on the next week had another discussion call where they helped me get these things fixed. Then I was adviced to start working on the project in order to get started. Mentors taught me how the reports were generated, How to generate CSV reports and I got to know more about perf. They shared few presentations and documentations by them which helped me in setting perf. Now, After this I generated the reports by myself, Converted them into HTML Table. At first I used a Python script using Pandas but It was not a good idea because it doesn't allow much customization. So, I figured out by myself and got those table by using D3.js logic itself. Then once the tables were on the page, I worked for filtering out them.</p>
+<p>Talking about my personal experience, On 20th May I got to know about the selection, Then I got a mail from mentor about an introductory call which we scehduled. In that, All of us Me and both of my mentors <strong>Guilherme Amadio</strong> and <strong>Bernhard Manfred Gruber</strong> had a brief introduction. Further, We had more project oriented discussion about what part am I supposed to look on more often. Then I got some links to Guest Accounts in CERN which was to be used for further communication and activities. After, The first call, I was playing around the repository and had few errors and questions. So, We on the next week had another discussion call where they helped me get these things fixed. Then I was adviced to start working on the project in order to get started. Mentors taught me how the reports were generated, How to generate CSV reports and I got to know more about perf. They shared few presentations and documentations by them which helped me in setting perf. Now, After this I generated the reports by myself, Converted them into HTML Table. At first I used a Python script using Pandas but It was not a good idea because it doesn't allow much customization. So, I figured out by myself and got those table by using D3.js logic itself. Then once the tables were on the page, I worked for filtering out them.</p>
 <p>I also got cleared that we were working on CMS which is a general purpose detector at Large Hadron Collider (LHC). I visited the CERN website and had a virtual tour of the CMS. Everything seemed like a rocket science to me, But I was blissfull to have even a virtual tour of it. I wonder how great the people working there might be. Meanwhile, There was a GSOC Global Summit on 3rd June. So, I have attended the whole summit. I have noted few learnings which I took from the summit. Here is an article refering <a href="https://medium.com/@harshiljani2002/my-learnings-from-gsoc22-global-summit-dab3e9db392">GSOC Summit Learnings</a></p>
 <p>Meanwhile, I explored more and more about the project and Now, I was able to explain to people that CERN has CMS detector which was simulated by Geant4 and I am profiling that software and providing the visuals for the same. I also explored the Phonix software of CERN-HSF which simulates CMS, ATLAS and other huge models out there at CERN. Also, Currently the <code>GDML</code> file is not available for ATLAS so we could not add up the visuals for ATLAS currently. </p>
 <blockquote>
 <p>Google &quot; GDML &quot; for learning about it and also for virtual tour to CMS just google CMS CERN</p>
 </blockquote>
 <p>At the end of the period, I already had a rough progress to me made and things were under control. Now, It was time to get into the coding journey since the community period was about to end. I also found that, My mentors were quit amazing personalities. One was maintainer at Gentoo Linux and other was very good at Free Running and Parkour. They had really good work life balance I guess. </p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="week-1"><a class="header" href="#week-1">Week 1</a></h1>
+<p>Me and my mentors have settled for Weekly Progress calls about discussing the progress of the project and what next we should be looking into it. The Week starts with this call itself. Now that, I already had a rough progress set, It was more easier to pick more clear ideas based on it. </p>
+<p>Let me show you the minimal version of the site which I already had at the start of Week 1 and by the end of community bonding. 
+This is still better than what I had for my very first progress. I misunderstood and took the perf text reports and stick them to the site. But then mentors corrected me saying, They don't actually need the Text or CSV report and it was all about converting the generated CSV report to HTML Tables. </p>
+<p><img src="https://user-images.githubusercontent.com/79367883/174475695-4e1b9179-6c6c-4862-a625-6703bd76536d.png" alt="Before Week 1" /></p>
+<p>In this, the table has been loaded from a demo.csv file which was not much filled with data. It was just a sample data file with very less number of entries. Now, If you look closely, There is a threshold based filtering part which I had implemented based on a For loop looping through all the entries and returing the ones that falls under that particular range. It was working well. </p>
+<p>Let's get back to discussion in the weekly call. Now, I was expected to add colours to the Tables based on the Metrics and also we had further discussions about the project for each chart individually. I coloured whole row based on a single metric. But, then I was corrected and expected to colour not just whole row but each cell based on their metric measures. So, I changed it as well and made each cell coloured. </p>
+<p>Now, One part of the project was to convert the perf reports to csv file using the awk script which was done by my mentor <strong>Guilherme Amadio</strong>. There were now more than one CSVs and we should allow the user to visualize all the reports. So, Next thing which I did was generalizing the loading of CSV file into the site. Currently, All you have to do for adding a CSV file is to add it inside the <code>Data/</code> directory and add the name of file to array. That will load all sort of files. Later I am thinking to even generalize array and let it read files directly from the directory itself. As I fixed this, I was showing this site to a close friend of mine. She, found a bug in it. When I was generalizing the reports, I completely forgot about the Download CSV Button. The file path for the same was broken so when she clicked on it, It gave her 404. And then she reported this to me and it costs me 2 Lolipop Candies😑😑. I fixed this up quickly, So it won't cost me candies and she won't get cavities. </p>
+<p>Now, There was some real problem with the threshold. Since, last time I used perf on the reports and generated the CSVs, I got actual data which was quite large compared to my demo data. So, The for loop for threshold was taking much longer time. It was the best possible way to find the entries in threshold ! Because it was O(N) I though like this. But, When I discussed this issue with my mentor he suggested me to apply the filters just using the d3 logic so that, It will get those things coloured during the transpilation of d3 to JavaScript. He shared a sample snippet of how it could be implemented. It helped me in drawing the idea for the same and I was able to implement the logic. But, It also made huge changes into the code. Whole logic was shifted to d3 and everytime new thresholds are there, We need to load the whole CSV to Table reports. It was definately helpful and worked really well as compared to my loop based logic.</p>
+<p>The design of site was not so great, Because I had used view-height and view-width everywhere to adjust things. So, I was suggested to use Grid or Flex and make it more responsive. I was also shared tutorials based on it. I was more comfortable with Flex comparatively so I applied the flex to whole site. I think it now looks much better than what It was looking before.</p>
+<p>Here is the Screenshot of the site at then end of Week 1. </p>
+<p><img src="https://user-images.githubusercontent.com/79367883/174476966-35ce971c-b1a1-4601-a0b7-09762046a0bc.png" alt="After Week 1" /></p>
+<p>TLDR :</p>
+<ul>
+<li>Coloured the individual cells based on metric. </li>
+<li>Converted perf Reports to CSV with the help of awk scripts (provided by Mentor).</li>
+<li>Converted Threshold Logic from a <code>for</code> Loop to d3.js logic.</li>
+<li>Generalized the file input for loading CSVs.</li>
+<li>Changed styling of the site using Flex-box.</li>
+</ul>
 
                     </main>
 
@@ -204,6 +224,22 @@ Each Organization have their own set of rules, workflows and hierarcy to follow.
 
         </div>
 
+        <!-- Livereload script (if served using the cli tool) -->
+        <script type="text/javascript">
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
 
 
 

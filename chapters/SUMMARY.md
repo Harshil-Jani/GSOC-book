@@ -4,3 +4,4 @@
 [Exploring GSOC](./exploring_GSOC.md)
 - [Community Bonding Period](./chapter1.md)
 - [Week 1](./chapter2.md)
+- [Week 2](./chapter3.md)

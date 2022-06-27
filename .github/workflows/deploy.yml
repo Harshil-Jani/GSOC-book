@@ -32,3 +32,4 @@ jobs:
         git add .
         git commit -m "Deploy $GITHUB_SHA to gh-pages"
         git push --force
+# Sample commit to check everything is working well.

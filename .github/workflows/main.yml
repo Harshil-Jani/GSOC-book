@@ -1,0 +1,18 @@
+name: Deploy
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        fetch-depth: 0
+    - name: Install CodeSpell
+      run: pip install codespell
+    - name: Write Suggested Spelling Changes
+      run: codespell -w chapters/
+   

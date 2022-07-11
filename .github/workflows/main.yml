@@ -1,4 +1,4 @@
-name: Deploy
+name: Spelling Fix
 on:
   push:
     branches:

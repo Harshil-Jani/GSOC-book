@@ -44,7 +44,7 @@ SOME_ELEMENT.style("background-color", d => {
         }});
 ```
 
-In the domain array, The 3 values comes with `[ 5% of min, 75% of max, 95% of max ]` and other two coming out from the extent with two values in [0] and [1] as min and max respectively. This comes over the case where I have If else loops for each metric in specific which was the worst idea for mankind. Currently this doesn't look good, But soon it will be definately improved. 
+In the domain array, The 3 values comes with `[ 5% of min, 75% of max, 95% of max ]` and other two coming out from the extent with two values in [0] and [1] as min and max respectively. This comes over the case where I have If else loops for each metric in specific which was the worst idea for mankind. Currently this doesn't look good, But soon it will be definitely improved. 
 
 Also, My GSOC Blogs which are mere version from this book itself but written in more official manner have been merged with the CERN-HSF site. And they used codespell for spell check. I had few spelling errors which were checked by codespell and then I changed those and got my changes merged. I am now planning to add codespell to my GSOC book for more better Automation. You see, How you can learn a little things from open sourced program. Automation just saved time for PR reviewers not to worry about spelling errors. I also have an open issue on my GSOC Book repo for spell checks which now I am feeling was a dumb idea. Now, I will also integrate codespell to my GSOC Book.
 

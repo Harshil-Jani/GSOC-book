@@ -10,3 +10,4 @@
 - [Week 5](./chapter6.md)
 - [Week 6](./chapter7.md)
 - [Week 7](./chapter8.md)
+- [Week 8](./chapter9.md)

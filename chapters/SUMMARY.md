@@ -11,3 +11,6 @@
 - [Week 6](./chapter7.md)
 - [Week 7](./chapter8.md)
 - [Week 8](./chapter9.md)
+- [Week 9](./chapter10.md)
+- [Week 10](./chapter11.md)
+- [Week 11](./chapter12.md)
